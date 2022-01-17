@@ -38,30 +38,30 @@ class MyCustomModal extends HTMLElement {
     this._root.innerHTML = `
         <style>
             .modal {
-                position: fixed;
-                width: 640px;
-                max-width: 80%;
-                height: 480px;
-                max-height: 60%;
-                left: 50%;
-                top: 50%;
                 background-color: #fff;
-                opacity: 1;
-                z-index: 102;
-                color: #333;
-                transform: translate(-50%, -50%);
-                padding: 20px;
                 border-radius: 10px;
+                color: #333;
+                height: 480px;
+                left: 50%;
+                max-height: 60%;
+                max-width: 80%;
+                opacity: 1;
+                padding: 20px;
+                position: fixed;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                width: 640px;
+                z-index: 102;
             }
             .modal-shield {
-                content: '';
-                width: 100vw;
-                height: 100vh;
                 background-color: #000;
-                opacity: .2;
+                content: '';
+                height: 100vh;
                 left: 0;
-                top: 0;
+                opacity: .2;
                 position: fixed;
+                top: 0;
+                width: 100vw;
                 z-index: 101;
             }
         </style>
